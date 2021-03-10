@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package Ayuda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,19 +8,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aplication.covsin.R;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Date;
+import BaseDeDatos.AdminSQLiteOpenHelper;
+import login.SesionActivity;
 
 public class TracingActivity extends AppCompatActivity {
 

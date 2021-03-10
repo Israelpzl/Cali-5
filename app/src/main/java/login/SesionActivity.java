@@ -1,12 +1,16 @@
-package com.aplication.covsin;
+package login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Fade;
 import android.view.View;
 
+import Mapa.MapActivity;
+import com.aplication.covsin.R;
+import com.aplication.covsin.RecordActivity;
+import Ayuda.SymptomsActivity;
+import Ayuda.TracingActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 public class SesionActivity extends AppCompatActivity {

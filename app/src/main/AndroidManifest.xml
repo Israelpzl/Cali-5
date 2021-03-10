@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CovSin">
-        <activity android:name=".Rating1Activity"></activity>
+        <activity android:name="login.Rating1Activity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -32,19 +32,19 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".HospitalMapsActivity"
+            android:name="Mapa.HospitalMapsActivity"
             android:label="@string/title_activity_hospital_maps" />
-        <activity android:name=".TutorialActivity" />
-        <activity android:name=".Faq2Activity" />
+        <activity android:name="Ayuda.TutorialActivity" />
+        <activity android:name="BaseDeDatos.Faq2Activity" />
         <activity android:name=".RecordActivity" />
-        <activity android:name=".TracingActivity" />
-        <activity android:name=".SesionActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".SymptomsActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name="Ayuda.TracingActivity" />
+        <activity android:name="login.SesionActivity" />
+        <activity android:name="Mapa.MapActivity" />
+        <activity android:name="Ayuda.SymptomsActivity" />
+        <activity android:name="login.RegisterActivity" />
+        <activity android:name="login.LoginActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -8,6 +8,14 @@ import android.view.View;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
+import Ayuda.SymptomsActivity;
+import Ayuda.TutorialActivity;
+import BaseDeDatos.Faq2Activity;
+import Mapa.HospitalMapsActivity;
+import Mapa.MapActivity;
+import login.LoginActivity;
+import login.RegisterActivity;
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override

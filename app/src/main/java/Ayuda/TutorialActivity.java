@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package Ayuda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.aplication.covsin.MenuActivity;
+import com.aplication.covsin.R;
 
 public class TutorialActivity extends AppCompatActivity {
 

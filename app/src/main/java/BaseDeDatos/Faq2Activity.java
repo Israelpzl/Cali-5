@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package BaseDeDatos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.aplication.covsin.MenuActivity;
+import com.aplication.covsin.R;
 
 public class Faq2Activity extends AppCompatActivity {
 

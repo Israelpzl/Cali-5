@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package Ayuda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.aplication.covsin.R;
 
 public class SymptomsActivity extends AppCompatActivity {
 

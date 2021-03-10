@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import BaseDeDatos.AdminSQLiteOpenHelper;
+import com.aplication.covsin.R;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 
