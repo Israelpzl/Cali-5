@@ -5,6 +5,7 @@
     <string name="symptoms" translatable="false">Síntomas</string>
     <string name="map" translatable="false">Mapa</string>
     <string name="menu" translatable="false">Menu</string>
+    <string name="consejos" translatable="false">Consejos</string>
     <string name="menu_sesion" translatable="false">Sesión</string>
     <string name="record" translatable="false">Historial</string>
     <string name="tracing" translatable="false">Seguimiento</string>
