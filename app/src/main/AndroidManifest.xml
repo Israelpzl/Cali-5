@@ -36,7 +36,7 @@
             android:label="@string/title_activity_hospital_maps" />
         <activity android:name="Ayuda.TutorialActivity" />
         <activity android:name="BaseDeDatos.Faq2Activity" />
-        <activity android:name=".RecordActivity" />
+        <activity android:name="BaseDeDatos.RecordActivity" />
         <activity android:name="Ayuda.TracingActivity" />
         <activity android:name="login.SesionActivity" />
         <activity android:name="Mapa.MapActivity" />
