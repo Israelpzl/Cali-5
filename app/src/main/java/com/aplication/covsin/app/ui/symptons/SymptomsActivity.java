@@ -1,4 +1,4 @@
-package Ayuda;
+package com.aplication.covsin.app.ui.symptons;
 
 import androidx.appcompat.app.AppCompatActivity;
 

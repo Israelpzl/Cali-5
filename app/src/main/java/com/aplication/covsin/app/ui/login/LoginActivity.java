@@ -1,4 +1,4 @@
-package login;
+package com.aplication.covsin.app.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import BaseDeDatos.AdminSQLiteOpenHelper;
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.login.SesionActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 public class LoginActivity extends AppCompatActivity {

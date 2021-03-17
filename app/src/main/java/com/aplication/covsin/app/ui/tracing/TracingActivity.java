@@ -1,4 +1,4 @@
-package Ayuda;
+package com.aplication.covsin.app.ui.tracing;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,10 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.login.SesionActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 import BaseDeDatos.AdminSQLiteOpenHelper;
-import login.SesionActivity;
 
 public class TracingActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package login;
+package com.aplication.covsin.app.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 

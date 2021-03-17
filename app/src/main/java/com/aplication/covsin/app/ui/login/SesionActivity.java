@@ -1,4 +1,4 @@
-package login;
+package com.aplication.covsin.app.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import Mapa.MapActivity;
 import com.aplication.covsin.R;
-import com.aplication.covsin.RecordActivity;
-import Ayuda.SymptomsActivity;
-import Ayuda.TracingActivity;
+import com.aplication.covsin.app.ui.hospital.MapActivity;
+import com.aplication.covsin.app.ui.rating.Rating1Activity;
+import com.aplication.covsin.app.ui.record.RecordActivity;
+import com.aplication.covsin.app.ui.symptons.SymptomsActivity;
+import com.aplication.covsin.app.ui.tracing.TracingActivity;
+import com.aplication.covsin.app.ui.tutorial.TutorialActivity;
+
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 public class SesionActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package Ayuda;
+package com.aplication.covsin.app.ui.tutorial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import com.aplication.covsin.MenuActivity;
+import com.aplication.covsin.app.ui.menu.MenuActivity;
 import com.aplication.covsin.R;
 
 public class TutorialActivity extends AppCompatActivity {

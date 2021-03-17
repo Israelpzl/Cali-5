@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package com.aplication.covsin.app.ui.record;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,10 +13,11 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.login.SesionActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 import BaseDeDatos.AdminSQLiteOpenHelper;
-import login.SesionActivity;
 
 public class RecordActivity extends AppCompatActivity {
 

@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import com.aplication.covsin.MenuActivity;
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.menu.MenuActivity;
 
 
 public class MainActivity extends AppCompatActivity {

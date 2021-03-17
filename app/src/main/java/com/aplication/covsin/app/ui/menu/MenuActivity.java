@@ -1,4 +1,4 @@
-package com.aplication.covsin;
+package com.aplication.covsin.app.ui.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,17 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.aplication.covsin.app.ui.faq.Faq2Activity;
+import com.aplication.covsin.app.ui.hospital.MapActivity;
+import com.aplication.covsin.app.ui.login.LoginActivity;
+import com.aplication.covsin.app.ui.login.RegisterActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
-import Ayuda.SymptomsActivity;
-import Ayuda.TutorialActivity;
-import BaseDeDatos.Faq2Activity;
+import com.aplication.covsin.app.ui.symptons.SymptomsActivity;
+import com.aplication.covsin.app.ui.tutorial.TutorialActivity;
 import Mapa.HospitalMapsActivity;
-import Mapa.MapActivity;
-import login.LoginActivity;
-import login.RegisterActivity;
 
 public class MenuActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

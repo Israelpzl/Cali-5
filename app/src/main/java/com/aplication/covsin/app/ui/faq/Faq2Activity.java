@@ -1,25 +1,20 @@
-package BaseDeDatos;
+package com.aplication.covsin.app.ui.faq;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.aplication.covsin.MenuActivity;
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.menu.MenuActivity;
 
 public class Faq2Activity extends AppCompatActivity {
 
-    private Switch pregunta1;
-    private Switch pregunta2;
-    private Switch pregunta3;
-    private Switch pregunta4;
-    private Switch pregunta5;
-    private Switch pregunta6;
+    private Switch[] preguntas;
     private TextView respuesta;
 
 
@@ -28,47 +23,59 @@ public class Faq2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq2);
 
-        pregunta1 = (Switch)findViewById(R.id.faqPregunta1);
-        pregunta2 = (Switch)findViewById(R.id.faqPregunta2);
-        pregunta3 = (Switch)findViewById(R.id.faqPregunta3);
-        pregunta4 = (Switch)findViewById(R.id.faqPregunta4);
-        pregunta5 = (Switch)findViewById(R.id.faqPregunta5);
-        pregunta6 = (Switch)findViewById(R.id.faqPregunta6);
-        respuesta = (TextView)findViewById(R.id.faqRespuesta3);
+        preguntas=GetPreguntas();
+        respuesta = (TextView) findViewById(R.id.faqRespuesta3);
+    }
 
 
-
-
-
-        }
-
-
-    public void setPregunta1 (View View) {
-        if (pregunta1.isChecked()){
-            respuesta.setText("Evitan que contagies, pero te puedes contagiar tu.");
-        } else if (pregunta2.isChecked()){
-            respuesta.setText("Manténgase aislada 14 días a espera de los resultados de la pcr o en " +
-                    "caso de no poder hacérsela espere por síntomas.");
-        } else if (pregunta3.isChecked()){
-            respuesta.setText("Las investigaciones indican que los niños y los adolescentes tienen las mismas " +
-                    "probabilidades de infectarse que cualquier otro grupo de edad y pueden " +
-                    "propagar la enfermedad.");
-        } else if (pregunta4.isChecked()){
-            respuesta.setText("No, pero es cierto que si coincides en diversos sintomas podria ser un indicativo de que padeces covid.");
-        } else if (pregunta5.isChecked()){
-            respuesta.setText("las mascarillas N95,KN95,KF94 o Kf95 son una buena opcion " +
-                    "las FFP2 tambien pero las FFP3 estan reservadas para personal sanitario.");
-        } else if (pregunta6.isChecked()){
-            respuesta.setText("Si te indentificas con alguno de estos grupos perteneces a la poblacion de " +
-                    "riesgo personas que tienen más de 60 años, enfermedades cardiovasculares e hipertensión arterial, " +
-                    "diabetes, enfermedades pulmonares crónicas, cáncer, inmunodepresión, embarazo.");
+    public void setPreguntas(View View) {
+        if (preguntas[0].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
+        } else if (preguntas[1].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
+        } else if (preguntas[2].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
+        } else if (preguntas[3].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
+        } else if (preguntas[4].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
+        } else if (preguntas[5].isChecked()) {
+            respuesta.setText(R.string.textoPreguntaMenu1);
         } else
             respuesta.setText("");
     }
 
-    public void Menu (View View){
-        Intent menu =new Intent(this, MenuActivity.class);
+    public void Menu(View View) {
+        Intent menu = new Intent(this, MenuActivity.class);
         startActivity(menu);
+    }
+
+    public Switch[] GetPreguntas() {
+        int numeroPreguntas = 6;
+        Switch[] preguntas = new Switch[numeroPreguntas];
+        for (int i = 0; i < numeroPreguntas; i++) {
+            preguntas[i] = GetPreguntaCorrespondiente(i);
+        }
+        return preguntas;
+    }
+
+    private Switch GetPreguntaCorrespondiente(int numeroPregunta) {
+        switch (numeroPregunta) {
+            case 0:
+                return (Switch) findViewById(R.id.faqPregunta1);
+            case 1:
+                return (Switch) findViewById(R.id.faqPregunta2);
+            case 2:
+                return (Switch) findViewById(R.id.faqPregunta3);
+            case 3:
+                return (Switch) findViewById(R.id.faqPregunta4);
+            case 4:
+                return (Switch) findViewById(R.id.faqPregunta5);
+            case 5:
+                return (Switch) findViewById(R.id.faqPregunta6);
+            default:
+                return null;
+        }
     }
 
 }

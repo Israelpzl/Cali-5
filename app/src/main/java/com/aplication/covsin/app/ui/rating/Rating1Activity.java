@@ -1,4 +1,4 @@
-package login;
+package com.aplication.covsin.app.ui.rating;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,10 +14,10 @@ import android.widget.RatingBar;
 import android.widget.Toast;
 
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.login.SesionActivity;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 import BaseDeDatos.AdminSQLiteOpenHelper;
-import login.SesionActivity;
 
 public class Rating1Activity extends AppCompatActivity {
 
