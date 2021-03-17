@@ -65,5 +65,6 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(hospi);
     }
 
+//    This is the new feature HU1
 
 }
