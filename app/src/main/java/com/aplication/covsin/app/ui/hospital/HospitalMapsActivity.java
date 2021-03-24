@@ -1,4 +1,4 @@
-package Mapa;
+package com.aplication.covsin.app.ui.hospital;
 
 import androidx.fragment.app.FragmentActivity;
 

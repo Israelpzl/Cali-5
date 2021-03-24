@@ -1,4 +1,4 @@
-package main;
+package com.aplication.covsin.app.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 

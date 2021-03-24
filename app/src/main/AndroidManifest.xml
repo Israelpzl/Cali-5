@@ -32,19 +32,19 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="Mapa.HospitalMapsActivity"
+            android:name=".app.ui.hospital.MapActivity"
             android:label="@string/title_activity_hospital_maps" />
-        <activity android:name="Ayuda.TutorialActivity" />
-        <activity android:name="BaseDeDatos.Faq2Activity" />
-        <activity android:name=".RecordActivity" />
-        <activity android:name="Ayuda.TracingActivity" />
-        <activity android:name="login.SesionActivity" />
-        <activity android:name="Mapa.MapActivity" />
-        <activity android:name="Ayuda.SymptomsActivity" />
-        <activity android:name="login.RegisterActivity" />
-        <activity android:name="login.LoginActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name="main.MainActivity">
+        <activity android:name=".app.ui.tutorial.TutorialActivity" />
+        <activity android:name=".app.ui.faq.Faq2Activity" />
+        <activity android:name=".app.ui.record.RecordActivity" />
+        <activity android:name=".app.ui.tracing.TracingActivity" />
+        <activity android:name=".app.ui.login.SesionActivity" />
+        <activity android:name=".app.ui.symptons.SymptomsActivity" />
+        <activity android:name=".app.ui.login.RegisterActivity" />
+        <activity android:name=".app.ui.login.LoginActivity" />
+        <activity android:name=".app.ui.hospital.HospitalMapsActivity" />
+        <activity android:name=".app.ui.menu.MenuActivity" />
+        <activity android:name=".app.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

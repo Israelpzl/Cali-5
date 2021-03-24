@@ -32,15 +32,15 @@ public class Faq2Activity extends AppCompatActivity {
         if (preguntas[0].isChecked()) {
             respuesta.setText(R.string.textoPreguntaMenu1);
         } else if (preguntas[1].isChecked()) {
-            respuesta.setText(R.string.textoPreguntaMenu1);
+            respuesta.setText(R.string.textoPreguntaMenu2);
         } else if (preguntas[2].isChecked()) {
-            respuesta.setText(R.string.textoPreguntaMenu1);
+            respuesta.setText(R.string.textoPreguntaMenu3);
         } else if (preguntas[3].isChecked()) {
-            respuesta.setText(R.string.textoPreguntaMenu1);
+            respuesta.setText(R.string.textoPreguntaMenu4);
         } else if (preguntas[4].isChecked()) {
-            respuesta.setText(R.string.textoPreguntaMenu1);
+            respuesta.setText(R.string.textoPreguntaMenu5);
         } else if (preguntas[5].isChecked()) {
-            respuesta.setText(R.string.textoPreguntaMenu1);
+            respuesta.setText(R.string.textoPreguntaMenu6);
         } else
             respuesta.setText("");
     }

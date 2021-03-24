@@ -1,20 +1,21 @@
 package com.aplication.covsin.app.ui.menu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.aplication.covsin.R;
 import com.aplication.covsin.app.ui.faq.Faq2Activity;
+import com.aplication.covsin.app.ui.hospital.HospitalMapsActivity;
 import com.aplication.covsin.app.ui.hospital.MapActivity;
 import com.aplication.covsin.app.ui.login.LoginActivity;
 import com.aplication.covsin.app.ui.login.RegisterActivity;
-import com.blogspot.atifsoftwares.animatoolib.Animatoo;
-
 import com.aplication.covsin.app.ui.symptons.SymptomsActivity;
 import com.aplication.covsin.app.ui.tutorial.TutorialActivity;
-import Mapa.HospitalMapsActivity;
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 
 public class MenuActivity extends AppCompatActivity {
 
