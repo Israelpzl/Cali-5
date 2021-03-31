@@ -3,6 +3,7 @@ package com.aplication.covsin;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
 
+
 import com.aplication.covsin.app.ui.faq.Faq2Activity;
 
 import org.junit.Rule;
@@ -27,7 +28,7 @@ public class FaqQuestion2Test {
                .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu1)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("Evitan que contagies, pero te puedes contagiar tu.")));
     }
 
     @Test
@@ -36,7 +37,8 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu2)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("Manténgase aislada 14 días a espera de los resultados de la pcr o en " +
+                "caso de no poder hacérsela espere por síntomas.")));
     }
     @Test
     public void testSwitch3() {
@@ -44,7 +46,9 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu3)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("Las investigaciones indican que los niños y los adolescentes tienen las mismas " +
+                "probabilidades de infectarse que cualquier otro grupo de edad y pueden " +
+                "propagar la enfermedad.")));
     }
     @Test
     public void testSwitch4() {
@@ -52,7 +56,7 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu4)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("No, pero es cierto que si coincides en diversos sintomas podria ser un indicativo de que padeces covid.")));
     }
     @Test
     public void testSwitch5() {
@@ -60,7 +64,8 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu5)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("las mascarillas N95,KN95,KF94 o Kf95 son una buena opcion " +
+                "las FFP2 tambien pero las FFP3 estan reservadas para personal sanitario.")));
     }
     @Test
     public void testSwitch6() {
@@ -68,7 +73,9 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu6)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("Si te indentificas con alguno de estos grupos perteneces a la poblacion de " +
+                "riesgo personas que tienen más de 60 años, enfermedades cardiovasculares e hipertensión arterial, " +
+                "diabetes, enfermedades pulmonares crónicas, cáncer, inmunodepresión, embarazo.")));
     }
 
     @Test
@@ -79,6 +86,6 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
-        onView((withId(R.id.faqRespuesta3))).check(matches(withText(R.string.textoPreguntaMenu1)));
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("Evitan que contagies, pero te puedes contagiar tu.")));
     }
 }
