@@ -23,12 +23,12 @@ public class Faq2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq2);
 
-        preguntas=GetPreguntas();
+        preguntas = GetPreguntas();
         respuesta = (TextView) findViewById(R.id.faqRespuesta3);
     }
 
 
-    public void setPreguntas(View View) {
+    public void setRespuesta(View View) {
         if (preguntas[0].isChecked()) {
             respuesta.setText(R.string.textoPreguntaMenu1);
         } else if (preguntas[1].isChecked()) {
@@ -60,22 +60,25 @@ public class Faq2Activity extends AppCompatActivity {
     }
 
     private Switch GetPreguntaCorrespondiente(int numeroPregunta) {
-        switch (numeroPregunta) {
-            case 0:
-                return (Switch) findViewById(R.id.faqPregunta1);
-            case 1:
-                return (Switch) findViewById(R.id.faqPregunta2);
-            case 2:
-                return (Switch) findViewById(R.id.faqPregunta3);
-            case 3:
-                return (Switch) findViewById(R.id.faqPregunta4);
-            case 4:
-                return (Switch) findViewById(R.id.faqPregunta5);
-            case 5:
-                return (Switch) findViewById(R.id.faqPregunta6);
-            default:
-                return null;
+        try {
+            switch (numeroPregunta) {
+                case 0:
+                    return (Switch) findViewById(R.id.faqPregunta1);
+                case 1:
+                    return (Switch) findViewById(R.id.faqPregunta2);
+                case 2:
+                    return (Switch) findViewById(R.id.faqPregunta3);
+                case 3:
+                    return (Switch) findViewById(R.id.faqPregunta4);
+                case 4:
+                    return (Switch) findViewById(R.id.faqPregunta5);
+                case 5:
+                    return (Switch) findViewById(R.id.faqPregunta6);
+                default:
+                    throw new Exception("Pregunta no implementada");            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Switch(null);
         }
     }
-
 }
