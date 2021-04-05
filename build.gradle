@@ -13,6 +13,9 @@ buildscript {
     }
 }
 
+
+
+ //si no funciona al ejecutar, se deberá poner en comentarios  todas las líenas de abajo ya que son los plugins para la compilacion mediante comandos y el enlace de sonarcloud
 plugins {
     id "org.sonarqube" version "3.1.1"
 }
@@ -37,7 +40,6 @@ sonarqube {
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
-
 String branch
 
 task gitBranch{
@@ -116,4 +118,4 @@ task gitCompletePush {
 
     
 
- 
+
