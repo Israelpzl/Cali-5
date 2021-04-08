@@ -81,4 +81,9 @@ public class Faq2Activity extends AppCompatActivity {
             return new Switch(null);
         }
     }
+
+    public void ClearText(View view) {
+        respuesta.setText("");
+
+    }
 }

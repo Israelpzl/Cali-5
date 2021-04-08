@@ -61,4 +61,5 @@
     <string name="textoPreguntaMenu4" translatable="false">"No, pero es cierto que si coincides en diversos sintomas podria ser un indicativo de que padeces covid."</string>
     <string name="textoPreguntaMenu5" translatable="false">"las mascarillas N95,KN95,KF94 o Kf95 son una buena opcion las FFP2 tambien pero las FFP3 estan reservadas para personal sanitario."</string>
     <string name="textoPreguntaMenu6" translatable="false">"Si te indentificas con alguno de estos grupos perteneces a la poblacion de riesgo personas que tienen más de 60 años, enfermedades cardiovasculares e hipertensión arterial, diabetes, enfermedades pulmonares crónicas, cáncer, inmunodepresión, embarazo."</string>
+    <string name="limpiar">Limpiar</string>
 </resources>
