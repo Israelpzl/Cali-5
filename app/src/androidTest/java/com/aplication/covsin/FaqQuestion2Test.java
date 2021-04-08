@@ -95,6 +95,8 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView(withId(R.id.button2))
                 .perform(click());
+        onView(withId(R.id.buttonClear))
+                .perform(click());
         onView((withId(R.id.faqRespuesta3))).check(matches(withText("")));
     }
 }
