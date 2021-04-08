@@ -91,8 +91,6 @@ public class FaqQuestion2Test {
 
     @Test
     public void testClearTextBox() {
-        onView(withId(R.id.faqPregunta6))
-                .perform(click());
         onView(withId(R.id.faqPregunta1))
                 .perform(click());
         onView(withId(R.id.button2))
