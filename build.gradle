@@ -32,7 +32,7 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-
+/*
 sonarqube {
     properties {
         property "sonar.projectKey", "Israelpzl_Cali-5"
@@ -119,3 +119,4 @@ task gitCompletePush {
     
 
 
+*/

@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.hospital.VacunacionActivity;
 import com.aplication.covsin.app.ui.faq.Faq2Activity;
 import com.aplication.covsin.app.ui.hospital.HospitalMapsActivity;
 import com.aplication.covsin.app.ui.hospital.MapActivity;
@@ -49,6 +50,14 @@ public class MenuActivity extends AppCompatActivity {
         Intent map = new Intent(this, MapActivity.class);
         startActivity(map);
         Animatoo.animateSlideRight(this);
+    }
+
+    public void vac (View View){
+        Intent vac = new Intent(this, VacunacionActivity.class);
+        startActivity(vac);
+        Animatoo.animateSlideRight(this);
+
+
     }
 
     public void Frequent (View View){

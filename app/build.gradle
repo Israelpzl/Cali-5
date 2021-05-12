@@ -1,5 +1,7 @@
+
 plugins {
     id 'com.android.application'
+
 }
 
 android {
@@ -14,7 +16,29 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        testApplicationId " com.example.azevedorafaela.myapplication "
+        testInstrumentationRunner" com.example.azevedorafaela.myapplication.test.Instrumentación "
+
     }
+
+    testOptions {
+        unitTests.all {
+            def classpath2 = getClasspath()
+            javaexec {
+                main = "cucumber.api.cli.Main"
+                classpath = classpath2
+                args = ['--plugin', 'pretty', '--glue', 'gradle.cucumber', 'src/test/java/cucumber/assets']
+            }
+        }
+    }
+
+    sourceSets {
+        androidTest {
+            assets.srcDirs = ['src / androidTest / assets']
+        }
+    }
+
 
     buildTypes {
         release {
@@ -46,4 +70,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'info.cukes:cucumber-android:1.2.4'
+    androidTestCompile 'info.cukes:cucumber-picocontainer:1.2.4'
+
 }
