@@ -1,4 +1,6 @@
-package cucumber.ErrorTest;
+package com.aplication.covsin.cucumber.ErrorTest;
+
+import com.aplication.covsin.app.ui.menu.MenuActivity;
 
 import org.junit.Assert;
 import org.junit.runner.RunWith;
@@ -16,17 +18,17 @@ public class ErrorTest {
 
     @Given("^Una página que avise al usuario que algo va mal$")
     public void given() throws Throwable {
-        System.out.println("El usuario pulsa el boton de vacunacion.");
+        System.out.println("La aplicacion da un error.");
     }
 
     @When("^Cuando suceda un error$")
     public void when() throws Throwable {
-        message = "hola esto es una prueba";
+        message = MenuActivity.errorMessage();
     }
 
     @Then("^Se notificará al usuario que ha habido un error$")
     public void then() throws Throwable {
-        Assert.assertEquals("hola esto es una prueba", message);
+        Assert.assertEquals("Ha ocurrido un error", message);
     }
 
 }
