@@ -1,4 +1,6 @@
-package cucumber.VacunacionTest;
+package com.aplication.covsin.cucumber.VacunacionTest;
+
+import com.aplication.covsin.app.ui.menu.MenuActivity;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -14,19 +16,19 @@ public class VacunacionTest {
 
     String message;
 
-    @Given("^una página web del ministerio con toda la infromación de la vacunación$")
+    @Given("^una página web del ministerio con toda la información de la vacunación$")
     public void given() throws Throwable {
         System.out.println("El usuario pulsa el boton de vacunacion.");
     }
 
     @When("^cuando se pulsa el botón \"([^\"]*)\"$")
     public void when(String strArg1) throws Throwable {
-        message = "hola esto es una prueba";
+        message = MenuActivity.vacMessage();
     }
 
-    @Then("^se muestra el resultado de la información$")
+    @Then("^se muestra una notificación al usuario$")
     public void then() throws Throwable {
-        Assert.assertEquals("hola esto es una prueba", message);
+        Assert.assertEquals("Has pulsado el boton", message);
     }
 
 }

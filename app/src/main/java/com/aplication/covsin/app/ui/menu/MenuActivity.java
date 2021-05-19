@@ -56,8 +56,15 @@ public class MenuActivity extends AppCompatActivity {
         Intent vac = new Intent(this, VacunacionActivity.class);
         startActivity(vac);
         Animatoo.animateSlideRight(this);
+        String test = "test";
+    }
 
+    public static String vacMessage(){
+        return "Has pulsado el boton";
+    }
 
+    public static String errorMessage(){
+        return "Ha ocurrido un error";
     }
 
     public void Frequent (View View){
