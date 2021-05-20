@@ -34,6 +34,10 @@ public class MenuActivity extends AppCompatActivity {
         Animatoo.animateSlideRight(this);
     }
 
+    public static String message(){
+        return "hola";
+    }
+
     public void Register (View View){
         Intent register = new Intent(this, RegisterActivity.class);
         startActivity(register);
@@ -65,6 +69,9 @@ public class MenuActivity extends AppCompatActivity {
 
     public static String errorMessage(){
         return "Ha ocurrido un error";
+    }
+    public static String userRandom(){
+        return "AntonioCuad";
     }
 
     public void Frequent (View View){
