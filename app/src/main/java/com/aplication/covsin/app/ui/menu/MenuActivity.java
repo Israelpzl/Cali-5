@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aplication.covsin.R;
+import com.aplication.covsin.app.ui.hospital.VacunacionActivity;
 import com.aplication.covsin.app.ui.faq.Faq2Activity;
 import com.aplication.covsin.app.ui.hospital.HospitalMapsActivity;
 import com.aplication.covsin.app.ui.hospital.MapActivity;
@@ -33,6 +34,10 @@ public class MenuActivity extends AppCompatActivity {
         Animatoo.animateSlideRight(this);
     }
 
+    public static String message(){
+        return "hola";
+    }
+
     public void Register (View View){
         Intent register = new Intent(this, RegisterActivity.class);
         startActivity(register);
@@ -49,6 +54,24 @@ public class MenuActivity extends AppCompatActivity {
         Intent map = new Intent(this, MapActivity.class);
         startActivity(map);
         Animatoo.animateSlideRight(this);
+    }
+
+    public void vac (View View){
+        Intent vac = new Intent(this, VacunacionActivity.class);
+        startActivity(vac);
+        Animatoo.animateSlideRight(this);
+        String test = "test";
+    }
+
+    public static String vacMessage(){
+        return "Has pulsado el boton";
+    }
+
+    public static String errorMessage(){
+        return "Ha ocurrido un error";
+    }
+    public static String userRandom(){
+        return "AntonioCuad";
     }
 
     public void Frequent (View View){

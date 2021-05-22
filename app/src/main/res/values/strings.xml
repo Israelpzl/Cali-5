@@ -54,7 +54,6 @@
     <string name="title_activity_hospital_maps">Map</string>
 
 
-
     <string name="textoPreguntaMenu1" translatable="false">"Evitan que contagies, pero te puedes contagiar tu."</string>
     <string name="textoPreguntaMenu2" translatable="false">"Manténgase aislada 14 días a espera de los resultados de la pcr o en caso de no poder hacérsela espere por síntomas."</string>
     <string name="textoPreguntaMenu3" translatable="false">"Las investigaciones indican que los niños y los adolescentes tienen las mismas probabilidades de infectarse que cualquier otro grupo de edad y pueden propagar la enfermedad."</string>

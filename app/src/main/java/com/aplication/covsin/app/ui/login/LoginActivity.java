@@ -37,6 +37,24 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public static String userRandom(){
+        return "AntonioCuad";
+    }
+
+    public static String PasswordUser(String User){
+        switch (User){
+            case "AntonioCuad":
+                return "Cuad";
+            case "Alvaro26":
+                return "Contraseña";
+            case "KentBeck":
+                return "Agilidad";
+        }
+        return "";
+        }
+
+
+
     public void Sesion (View View){
 
         userLogin = userLo.getText().toString();

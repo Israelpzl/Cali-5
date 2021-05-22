@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath 'com.android.tools.build:gradle:4.2.1'
 
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -13,6 +13,9 @@ buildscript {
     }
 }
 
+
+
+ //si no funciona al ejecutar, se deberá poner en comentarios  todas las líenas de abajo ya que son los plugins para la compilacion mediante comandos y el enlace de sonarcloud
 plugins {
     id "org.sonarqube" version "3.1.1"
 }
@@ -29,7 +32,7 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-
+/*
 sonarqube {
     properties {
         property "sonar.projectKey", "Israelpzl_Cali-5"
@@ -37,4 +40,85 @@ sonarqube {
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
+
+String branch
+
+task gitBranch{
+    description "This task return the current branch name"
+    branch = ""
+    def branch_proc = 'git rev-parse --abbrev-ref HEAD'.execute()
+    branch_proc.in.eachLine { String line -> banch = line }
+    branch_proc.err.eachLine { String line -> println line}
+    branch_proc.waitFor()
+    
+   }
+   
+task gitPull{
+    description "git Pull on current branch or if we pass --PbranchName='name-of-the-branch' we will do pull of this branch"
+    dependsOn "gitBranch"
+    doLast{
+        exec{
+            if (project.hasProperty('branchName')){
+                branch=branchName
+            }
+            commandLine "git", "pull", "origin", branch.toString()
+        }
+     }
+}
+
+task gitAdd{
+    description "This task add all modified elements"
+    doLast {
+        exec{
+            commandLine "git", "add", "*"
+        }
+    }
+}
+
+task gitCommit {
+    description "This task do commit all the modified elements with a message that you enter on the dialog"
+    doLast {
+        System.setProperty('java.awt.headless', 'false')
+        new SwingBuilder().edt {
+            dialog(modal: true, title: 'Enter commit message', alwaysOnTop: true, resizable: false, locationRelativeTo: null, pack: true, show: true) {
+                vbox {
+                    label(text: "Please enter your commit message:")
+                    def inputl = textField()
+                    button(defaultButton: true, text: 'OK', actionPerformed: {
+                        commitMessage = inputl.text;
+                        dispose()
+                        exec {
+                            commandLine "git", "commit", "—m", commitMessage
+                        }
+                    })
+                }
+            }
+        }
+    }
+}
+
+
+task gitPush {
+    description "git push on current branch"
+    dependsOn "gitBranch"
+    doLast{
+        exec{
+            commandLine "git", "push", "origin", branch.toString()
+        }
+    }
+}
+
+task gitCompletePush {
+    description "This task do all the processes to do push (add, commit and push)"
+    dependsOn "gitAdd"
+    dependsOn "gitCommit"
+    dependsOn "gitPush"
+    tasks.findByName("gitCommit").mustRunAfter "gitAdd"
+    tasks.findByName("gitPush").mustRunAfter "gitCommit"
+}
+
+    
+
+
+*/
 
