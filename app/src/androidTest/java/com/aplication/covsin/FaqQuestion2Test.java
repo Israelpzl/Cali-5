@@ -88,4 +88,15 @@ public class FaqQuestion2Test {
                 .perform(click());
         onView((withId(R.id.faqRespuesta3))).check(matches(withText("Evitan que contagies, pero te puedes contagiar tu.")));
     }
+
+    @Test
+    public void testClearTextBox() {
+        onView(withId(R.id.faqPregunta1))
+                .perform(click());
+        onView(withId(R.id.button2))
+                .perform(click());
+        onView(withId(R.id.buttonClear))
+                .perform(click());
+        onView((withId(R.id.faqRespuesta3))).check(matches(withText("")));
+    }
 }

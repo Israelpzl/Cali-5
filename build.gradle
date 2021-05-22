@@ -40,6 +40,7 @@ sonarqube {
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
+
 String branch
 
 task gitBranch{
@@ -120,3 +121,4 @@ task gitCompletePush {
 
 
 */
+
